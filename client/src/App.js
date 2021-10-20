@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/home'
 import Register from './components/Register';
 import Login from './components/Login';
+import Forgotpass from './components/Forgotpassword';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,6 +22,10 @@ function App (){
       <Route path="/login">  
         <Login />
       </Route>
+      <Route path="/forgotpassword">  
+        <Forgotpass />
+      </Route>
+      
     </Switch>
   </Router>
   );

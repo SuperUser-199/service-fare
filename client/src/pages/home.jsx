@@ -9,6 +9,12 @@ export default function Home() {
     </header>
    
 </div>
+<div>
+  <button><a href="/login">Login</a></button>
+  <button><a href="/register">Register</a></button>
+  <button><a href="/forgotpassword">Forgot Password</a></button>
+  
+</div>
     </>
   );
 }
