@@ -1,8 +1,11 @@
 import React from 'react'
-import './Style.css'
-
+import '../pages/Style.css'
+import Header from "../components/header"
 function Forgotpass() {
     return (
+        <>
+        <Header />
+        <div className="reg-body"> 
         <div class="container">
         <div class="logo">
             <h3>Service Fare</h3>
@@ -19,6 +22,8 @@ function Forgotpass() {
                 </form>
             </div>
         </div>
+        </div>
+        </>
     )
 }
 

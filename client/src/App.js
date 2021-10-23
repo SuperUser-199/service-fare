@@ -1,9 +1,15 @@
 import React from 'react';
-import './App.css';
-import Home from './pages/home'
-import Register from './components/Register';
-import Login from './components/Login';
+import Home from './pages/home';
+import Dashboard from './pages/dashboard';
+import Login  from './pages/login';
+import Register from './pages/Register';
+import Profile from './pages/profile';
 import Forgotpass from './components/Forgotpassword';
+import Setupprofile from './components/setupprofile';
+import Orders from './components/orders';
+import Orderdetails from './components/orderdetails';
+import Detailedservice from './components/detailedservice';
+import Cart  from './components/cart';
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,7 +31,27 @@ function App (){
       <Route path="/forgotpassword">  
         <Forgotpass />
       </Route>
-      
+      <Route path="/setupprofile">
+        <Setupprofile />
+      </Route>
+    <Route path="/profile">
+        <Profile />
+    </Route>
+    <Route path="/dashboard">
+        <Dashboard />
+    </Route>
+    <Route path="/orders">
+        <Orders />
+    </Route>
+    <Route path="/orderdetails">
+       <Orderdetails />
+    </Route>
+    <Route path="/service-menu">
+      <Detailedservice />
+    </Route>
+    <Route path="/cart">
+      <Cart />
+    </Route>
     </Switch>
   </Router>
   );
