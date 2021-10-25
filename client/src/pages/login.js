@@ -1,5 +1,5 @@
 import React from 'react'
-import './Style.css'
+import './login.css'
 import Header from "../components/header"
 function Login() {
     return (
@@ -27,8 +27,8 @@ function Login() {
                     <button type="submit">Login</button>
                     <p>Or login with</p>
                     <div className="login-social">
-                        <a href="#" id="fb">Facebook</a>
-                        <a href="#" id="gg">Google</a>
+                        <a href="/" id="fb">Facebook</a>
+                        <a href="/" id="gg">Google</a>
                     </div>
                     <p>Don't have an account? <a href="/register" className="switch">Register Now</a></p>
                 </form>

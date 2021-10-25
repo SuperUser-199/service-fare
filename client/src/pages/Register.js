@@ -1,5 +1,5 @@
 import React from 'react'
-import './Style.css'
+import './Register.css'
 import Header from "../components/header"
 function Register() {
     return (
@@ -11,8 +11,8 @@ function Register() {
             <h3>Service Fare</h3>
         </div>
             <div class="register-form toggle">
-                <h2>Register</h2>
-                <form autocomplete="off">
+                <h2 className="heading2">Register</h2>
+                <form autocomplete="off" className="regForm">
                     <input type="text" name="reg-fname" id="reg-fname" required placeholder="Enter your first name"/>
                     <input type="text" name="reg-lname" id="reg-lname" required placeholder="Enter your last name"/>
                     <input type="email" name="register-ml" id="register-ml" required placeholder="Enter your Email"/>
@@ -22,8 +22,8 @@ function Register() {
                     <div class="register-row">
                         
                     </div>
-                    <button type="submit">Register</button>
-                    <p>Do you have an account? <a href="/login" class="switch">Login Now</a></p>
+                    <button type="submit" className="reg-btn">Register</button>
+                    <p className="account">Do you have an account? <a href="/login" className="switch">Login Now</a></p>
                 </form>
             </div>
         </div>

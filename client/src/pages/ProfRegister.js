@@ -1,5 +1,5 @@
 import React from 'react'
-import './Style.css'
+import './ProfRegister.css'
 import Header from "../components/header"
 function Register() {
     return (
@@ -12,7 +12,7 @@ function Register() {
         </div>
             <div class="register-form toggle">
                 <h2>Professional Registration</h2>
-                <form autocomplete="off">
+                <form autocomplete="off" className="proRegForm">
                     <input type="text" name="reg-fname" id="reg-fname" required placeholder="Enter your first name"/>
                     <input type="text" name="reg-lname" id="reg-lname" required placeholder="Enter your last name"/>
                     <select className="selectStyle" id="gender" name="gender">
@@ -59,8 +59,8 @@ function Register() {
                     <div class="register-row">
                         
                     </div>
-                    <button type="submit">Register</button>
-                    <p>Do you have an account? <a href="/login" class="switch">Login Now</a></p>
+                    <button type="submit" className="reg-btn">Register</button>
+                    <p className="account">Do you have an account? <a href="/login" class="switch">Login Now</a></p>
                 </form>
             </div>
         </div>
