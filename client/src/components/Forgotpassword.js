@@ -1,5 +1,5 @@
 import React from 'react'
-import '../pages/Style.css'
+import './ForgotPassword.css'
 import Header from "../components/header"
 function Forgotpass() {
     return (
