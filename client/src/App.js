@@ -10,6 +10,7 @@ import Orders from './components/orders';
 import Orderdetails from './components/orderdetails';
 import Detailedservice from './components/detailedservice';
 import Cart  from './components/cart';
+import ProfRegister from './pages/ProfRegister';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,9 @@ function App (){
       </Route>
       <Route path="/register">  
         <Register />
+      </Route>
+      <Route path="/proregister">  
+        <ProfRegister />
       </Route>
       <Route path="/login">  
         <Login />

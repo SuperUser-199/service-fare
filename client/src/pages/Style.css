@@ -130,3 +130,13 @@ p {
     visibility: visible;
     opacity: 1;
 } */ 
+
+.selectStyle {
+    text-align: center;
+    padding: 5px;
+    width: 360px;
+    height: 40px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-bottom: 1px solid #555;
+}
