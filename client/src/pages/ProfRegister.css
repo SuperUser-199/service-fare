@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.container {
+.container-pro-reg {
     max-width: 500px;
     width: 100%;
     padding: 50px;
@@ -13,8 +13,7 @@
     border: 20px solid #1111;
 }
 
-.container .logo {
-    
+.container-pro-reg .logo {
     opacity: 0.6;
     margin-bottom: 20px;
 }
@@ -28,7 +27,6 @@
     width: 100%;
     margin: 10px 0;
     height: 40px;
-    
     border-bottom: 1px solid #555;
 }
 
@@ -104,7 +102,7 @@
     margin-left: 5px;
 }
 
-.container .row {
+.container-pro-reg .row {
     position: relative;
 }
 

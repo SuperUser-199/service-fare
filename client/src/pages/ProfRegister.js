@@ -6,7 +6,7 @@ function Register() {
         <>
         <Header />
         <div className="reg-body"> 
-        <div class="container">
+        <div class="container-pro-reg">
         <div class="logo">
             <h3>Service Fare</h3>
         </div>

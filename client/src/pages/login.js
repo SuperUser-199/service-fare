@@ -6,7 +6,7 @@ function Login() {
         <>
         <Header />
         <div className="reg-body"> 
-        <div className="container">
+        <div className="container-login">
         <div className="logo">
             <h3>Service Fare</h3>
         </div>

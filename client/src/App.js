@@ -11,6 +11,7 @@ import Orderdetails from './components/orderdetails';
 import Detailedservice from './components/detailedservice';
 import Cart  from './components/cart';
 import ProfRegister from './pages/ProfRegister';
+import ProfessionalProfile from './pages/ProfessionalProfile';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,6 +29,9 @@ function App (){
       </Route>
       <Route path="/proregister">  
         <ProfRegister />
+      </Route>
+      <Route path="/profilePro">  
+        <ProfessionalProfile />
       </Route>
       <Route path="/login">  
         <Login />

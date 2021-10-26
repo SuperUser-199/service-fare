@@ -34,6 +34,7 @@ function Header() {
           <a class="dropdown-item" href="/forgotpassword">Forgot Password</a>
           <a class="dropdown-item" href="/service-menu">Detailed Service</a>
           <a class="dropdown-item" href="/proregister">Professional Registration</a>
+          <a class="dropdown-item" href="/profilePro">Professional Profile</a>
 
 
           

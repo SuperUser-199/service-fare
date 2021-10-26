@@ -9,7 +9,7 @@ function Profile() {
             <div class="profile">
             <div class="col1">
                 <div class="profile-image"> 
-                 <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image" /> 
+                 <img src="https://img.icons8.com/bubbles/100/000000/user.png" className="img-radius" alt="User-Profile-Image" /> 
                 </div> 
                 <h1>Avinash</h1>
                 <a href="/"><button class="edit-button">Edit Profile</button></a>
