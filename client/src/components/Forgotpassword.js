@@ -6,7 +6,7 @@ function Forgotpass() {
         <>
         <Header />
         <div className="reg-body"> 
-        <div class="container">
+        <div class="container-pass">
         <div class="logo">
             <h3>Service Fare</h3>
         </div>

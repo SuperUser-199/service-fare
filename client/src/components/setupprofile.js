@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from "../components/header"
+import './setupprofile.css';
 
 function Setupprofile() {
     var stateObject = {
@@ -47,12 +48,12 @@ districtSel.options[districtSel.options.length] = new Option(district[i], distri
         <>
         <Header />
         <div className="reg-body"> 
-        <div class="container">
-        <div class="logo">
+        <div className="container-setup">
+        <div className="logo">
             <h3>Service Fare</h3>
         </div>
-            <div class="register-form toggle">
-                <h2>Complete your Profile</h2>
+            <div className="setup">
+                <h2 className="setup-head2">Complete your Profile</h2>
                 <form autocomplete="off">
                     <label id="gender">Choose your Gender :  </label>
                     <select id="gender" >
@@ -79,10 +80,10 @@ districtSel.options[districtSel.options.length] = new Option(district[i], distri
                             <br />
 
                     Pincode: <input type="number" name="reg-pincode" id="reg-pincode" required placeholder="Pincode" />
-                    <div class="register-row">
+                    <div className="register-row">
                         
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" className="setup-btn">Submit</button>
                 </form>
             </div>
         </div>
