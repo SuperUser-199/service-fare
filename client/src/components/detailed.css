@@ -1,6 +1,13 @@
 #product-card{
-    width:18rem;
-    margin:10px;
+    width:22rem;
+    margin:30px;
+}
+.card-img-top{
+    height: 300px;
+    width: auto;
+}
+.service-name{
+    margin:12px;
 }
 .service-menu{
     margin:4px;

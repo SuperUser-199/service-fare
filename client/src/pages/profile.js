@@ -5,43 +5,59 @@ function Profile() {
     return (
         <>
         <Header />
-        <div class="main">
-            <div class="profile">
-            <div class="col1">
-                <div class="profile-image"> 
-                 <img src="https://img.icons8.com/bubbles/100/000000/user.png" className="img-radius" alt="User-Profile-Image" /> 
-                </div> 
-                <h1>Avinash</h1>
-                <a href="/"><button class="edit-button">Edit Profile</button></a>
-            </div>
-            <div class="col2">
-                <h2>Information</h2>
-                <hr/>
-                <div class="info-main">
-                    <div class="info-main-row">
-                        <div  class="info-main-row-col">
-                            <h4>Email</h4>
-                            <p class="userinfo">user@emal.com</p>
-                        </div>
-                        <div class="info-main-row-col">
-                            <h4>Mobile No.</h4>
-                            <p class="userinfo">888888888</p>
+        <section className="section about-section gray-bg" id="about">
+            <div className="container">
+                <div className="row align-items-center flex-row-reverse">
+                    <div className="col-lg-6">
+                        <div className="about-text go-to">
+                            <h3 className="dark-color">About </h3>
+                            <h6 className="theme-color lead">Name</h6>
+                            <p>BIO</p>
+                                <div className="row about-list">
+                                <div className="col-md-6">
+                                    <div className="media">
+                                        <label>Birthday</label>
+                                        <p>4th april 1998</p>
+                                    </div>
+                                    
+                                    <div className="media">
+                                        <label>City/Village</label>
+                                        <p>Canada</p>
+                                    </div>
+                                    <div className="media">
+                                        <label>Address</label>
+                                        <p>California, USA,122004</p>
+                                    </div>
+                                   
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="media">
+                                        <label>E-mail</label>
+                                        <p>info@domain.com</p>
+                                    </div>
+                                    <div className="media">
+                                        <label>Phone</label>
+                                        <p>820-885-3321</p>
+                                    </div>
+                                    <div className="media">
+                                        <label>Gender</label>
+                                        <p>Male</p>
+                                    </div>
+                                    
+                                </div>
+                                <button class="edit-profile">Edit Profile</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="info-main-row">
-                        <div class="info-main-row-col">
-                            <h4>Gender</h4>
-                            <p class="userinfo">Male</p>
-                        </div>
-                        <div class="info-main-row-col">
-                            <h4>Address</h4>
-                            <p class="userinfo">City,District,State,pincode</p>
+                    <div className="col-lg-6">
+                        <div className="about-avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNTG7H8N2gOBaTKEjC_dEYZ-10zeZBWAYdaL_5eU-YP1GUHEIAEljhR4zTb_kbVj7ObE&usqp=CAU" title="" alt=""/>
                         </div>
                     </div>
                 </div>
+                
             </div>
-            </div>
-        </div>      
+        </section>  
         </>
            
     )
