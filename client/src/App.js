@@ -12,6 +12,7 @@ import Detailedservice from './components/detailedservice';
 import Cart  from './components/cart';
 import ProfRegister from './pages/ProfRegister';
 import ProfessionalProfile from './pages/ProfessionalProfile';
+import Signup from './pages/Signup';
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +27,9 @@ function App (){
       </Route>
       <Route path="/register">  
         <Register />
+      </Route>
+      <Route path="/signup">  
+        <Signup />
       </Route>
       <Route path="/proregister">  
         <ProfRegister />

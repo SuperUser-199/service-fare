@@ -44,7 +44,7 @@ function Header() {
     <a class="nav-link" href="/cart">
     <img class="cart"src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/000000/external-cart-grocery-flatart-icons-solid-flatarticons.png"/>
       Cart</a>
-    <a href="/register"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img class="login" src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/000000/external-sign-up-call-to-action-bearicons-outline-color-bearicons-1.png"/>
+    <a href="/signup"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img class="login" src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/000000/external-sign-up-call-to-action-bearicons-outline-color-bearicons-1.png"/>
       
       Sign Up</button> </a>
     <div> 
