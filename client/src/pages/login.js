@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import './login.css'
 import Header from "../components/header"
 function Login() {
+    const history = useHistory();
     const [user, setUser] = useState({
         email: "",
         password: "",
@@ -19,12 +21,18 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(user);
-        if (user.email && user.password) {
-            axios.post('/login', user)
-            .then(res => console.log(res))
-            .catch(err => console.log(err))
-        }
+        axios.post('/login', {email: user.email, pwd: user.password, remPwd: user.remPassword})
+        .then(res => {
+            if (res && res.status === 200) {
+                console.log(res.data.message);
+                history.push('/service-menu');
+            }
+        })
+        .catch(err => {
+            console.log(err);
+            window.alert('Login unsuccessfull! An unexpected error occured at the server');
+        })
+        
     }
 
     return (

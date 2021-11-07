@@ -3,7 +3,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path')
-const validator = require('validator');
 const session = require('express-session');
 const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
@@ -58,22 +57,28 @@ app.post('/login', (req, res) => {
         if (err) {
             console.log(err);
         } else {
-            console.log('Successfully logging-in user');
+            const info = {
+                message: "Successfully logged-in user"
+            }
+            const data = JSON.stringify(info);
+            res.send(data);
         }
     })
 })
 
-app.get('/', (req, res) => {
-    
-})
-
 // signup
 app.post('/signup', (req, res) => {
+    console.log(req.body);
     Person.register({email: req.body.email}, req.body.pwd, (err, user) => {
         if (err) {
             console.log(err);
         } else {
-            console.log('Successfully registered user');
+            console.log(user);
+            const info = {
+                message: "Successfully registered user"
+            }
+            const data = JSON.stringify(info);
+            res.send(data);
         }
     })
 })

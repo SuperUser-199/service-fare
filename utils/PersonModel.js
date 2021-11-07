@@ -1,17 +1,11 @@
 const mongoose = require('mongoose');
-const validator = require('validator');
 
 const personSchema = new mongoose.Schema({
     email: {
         type: 'String',
         trim: true,
         required: true,
-        lowercase: true,
-        validate(value) {
-            if (!validator.isEmail(value)) {
-                throw new Error('Email is invalid!')
-            }
-        }
+        lowercase: true
     },
     password: {
         type: 'String',
@@ -21,35 +15,20 @@ const personSchema = new mongoose.Schema({
     fname: {
         type: 'String',
         trim: true,
-        default: () => "default",
-        lowercase: true,
-        validate(value) {
-            if (!validator.isAlpha(value)) {
-                throw new Error('First name is invalid!')
-            }
-        }
+        default: () => "",
+        lowercase: true
     },
     lname: {
         type: 'String',
         trim: true,
-        default:  () => "default",
-        lowercase: true,
-        validate(value) {
-            if (!validator.isAlpha(value)) {
-                throw new Error('Last name is invalid!')
-            }
-        }
+        default:  () => "",
+        lowercase: true
     },
     gender: {
         type: 'String',
         trime: true,
-        default:  () => "default",
-        lowercase: true,
-        validate(value) {
-            if (!validator.isAlpha(value)) {
-                throw new Error('Gender is invalid!')
-            }
-        }
+        default:  () => "",
+        lowercase: true
     },
     mobile: {
         type: ['Number'],
@@ -57,55 +36,30 @@ const personSchema = new mongoose.Schema({
     state: {
         type: 'String',
         trim: true,
-        default:  () => "default",
+        default:  () => "",
         lowercase: true,
-        validate(value) {
-            if (!validator.isAlpha(value)) {
-                throw new Error('State is invalid!')
-            }
-        }
     },
     city: {
         type: 'String',
         trim: true,
-        default:  () => "default",
+        default:  () => "",
         lowercase: true,
-        validate(value) {
-            if (!validator.isAlpha(value)) {
-                throw new Error('City is invalid!')
-            }
-        } 
     },
     village: {
         type: 'String',
         trim: true,
-        default:  () => "default",
-        lowercase: true,
-        validate(value) {
-            if (!validator.isAlpha(value)) {
-                throw new Error('Village is invalid!')
-            }
-        } 
+        default:  () => "",
+        lowercase: true
     },
     district: {
         type: 'String',
         trim: true,
-        default:  () => "default",
-        lowercase: true,
-        validate(value) {
-            if (!validator.isAlpha(value)) {
-                throw new Error('District is invalid!')
-            }
-        } 
+        default:  () => "",
+        lowercase: true
     },
     pincode: {
         type: Number,
-        default:  () => 121006,
-        validate(value) {
-            if (!validator.isNumeric(value.toString())) {
-                throw new Error('Pincode is invalid!')
-            }
-        }
+        default:  () => 000000
     },
     img: {
         type: 'Buffer',

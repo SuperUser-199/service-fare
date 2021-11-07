@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import './Register.css'
 import Header from "../components/header"
 import axios from 'axios'
-function Signup() {
+import {useHistory} from 'react-router-dom'
 
+function Signup() {
+    const history = useHistory();
     const [user, setUser] = useState({
         email: "",
         pwd: "",
@@ -17,11 +19,20 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(user);
-        if (user.email && user.pwd && user.confirmpwd && user.pwd === user.confirmpwd) {
-            axios.post('/signup', user)
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
+        if (user.pwd === user.confirmpwd) {
+            axios.post('/signup', {email : user.email, pwd: user.pwd, cpwd: user.confirmpwd})
+            .then(res => {
+                if (res && res.status === 200) {
+                    console.log(res.data.message);
+                    history.push('/service-menu');
+                }
+            })
+            .catch(err => {
+                console.log(err);
+                window.alert('Registration unsuccessfull! An unexpected error occured at the server');
+            });
+        } else {
+            window.alert('Registration unsuccessfull\nPassword didn\'t match!');
         }
     }
 
